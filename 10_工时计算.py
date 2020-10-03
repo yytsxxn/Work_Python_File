@@ -25,11 +25,13 @@ def estimated(my_input):
     if (number == None) and (time != None):
     #当人力number为空值，工时time非空值时执行以下代码 
         number = math.ceil(size * 80 / time)
+        print(number)
         print('项目大小为%.1f个标准项目，如果需要在%.1f个工时完成，则需要人力数量为：%d人' %(size,time,number)) 
     # 工时计算
     elif (number != None) and (time == None):
     #当人力 number非空值，时间time为空值时，执行以下代码
         time = size * 80 / number
+        print(time)
         print('项目大小为%.1f个标准项目，使用%d个人力完成，则需要工时数量为：%.1f个' %(size,number,time))  
 # 主函数
 def main():
