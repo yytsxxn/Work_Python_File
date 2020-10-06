@@ -13,3 +13,4 @@ def f1():
     print('-------')
 f1()
 print(a,b)
+print(c)
